@@ -17,7 +17,7 @@ def raster2shp(mask_path, image_path, strVectorFile):
     gdal.SetConfigOption("SHAPE_ENCODING", "CP936")
 
     ogr.RegisterAll()
-    strDriverName = "ESRI Shapefile"
+    strDriverName = "GeoJSON"
     oDriver = ogr.GetDriverByName(strDriverName)
     if oDriver == None:
         print("驱动不可用！")
@@ -83,10 +83,10 @@ def shp2area(strShpFile,xpixel,ypixel):
 
 image_path = "F:\change2\global_monthly_2018_02_mosaic_L15-0358E-1220N_1433_3310_13.tif"# 原始有地理坐标的图片
 mask_path = "F:\change2\global_monthly_2018_02_mosaic_L15-0358E-1220N_1433_3310_13_Buildings.tif"# 分割结果图
-strShpFile = "F:\change2\strShpFile.shp"# 分割结果图转为包含每个矢量的面积的矢量文件
-strVectorFile = "F:\change2\strVectorFile.shp"# 分割结果图转矢量文件
+strShpFile = "F:\change2\strShpFile.geojson"# 分割结果图转为包含每个矢量的面积的矢量文件
+strVectorFile = "F:\change2\strVectorFile.geojson"# 分割结果图转矢量文件
 
 xpixel, ypixel = raster2shp(mask_path, image_path, strVectorFile)
-strTemp = "ogr2ogr -f \"ESRI Shapefile\" -explodecollections  \"F:\\change2\\strShpFile.shp\" \"F:\\change2\\strVectorFile.shp\""
+strTemp = "ogr2ogr -f \"GeoJSON\"  -explodecollections \"F:\\change2\\strShpFile.geojson\" \"F:\\change2\\strVectorFile.geojson\""
 os.system(strTemp)
 shp2area(strShpFile, xpixel, ypixel)
