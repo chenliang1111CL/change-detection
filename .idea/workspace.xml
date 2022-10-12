@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4115483b-3b3a-4e28-9f04-625269c2cd2c" name="变更" comment="变更">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CosmiQ_SN7_Baseline-master/models/sn7_baseline/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CosmiQ_SN7_Baseline-master/models/sn7_baseline/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CosmiQ_SN7_Baseline-master/yml/sn7_baseline_train.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CosmiQ_SN7_Baseline-master/yml/sn7_baseline_train.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRNet_segmentation/my_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/HRNet_segmentation/my_dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRNet_segmentation/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/HRNet_segmentation/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/makeCSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/makeCSV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HRNet_segmentation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/HRNet_segmentation/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HRNet_segmentation/test_result.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +36,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/user1/code/HRNet_segmentation",
+    "last_opened_file_path": "/home/user1/code/new",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
@@ -208,10 +205,5 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/HRNet_segmentation/test特色.py" line="11">
-        <watch expression="mask" language="Python" />
-      </inline-watch>
-    </watches-manager>
   </component>
 </project>
