@@ -23,7 +23,7 @@ data_specs:
   val_holdout_frac: 0.1
   data_workers:
 
-training_data_csv: '/local_data/sn7/aws_download/csvs/sn7_baseline_train_df.csv'
+training_data_csv: '/data/csvs/sn7_baseline_train_df2.csv'
 validation_data_csv:
 inference_data_csv:
 
@@ -79,7 +79,7 @@ training:
     early_stopping:
         patience: 24
     model_checkpoint:
-      filepath: '/path_to_baseline/models/sn7_baseline/xdxd_best.pth'
+      filepath: '/tmp/CosmiQ_SN7_Baseline-master/models/sn7_baseline/xdxd_best.pth'
       monitor: val_loss
     lr_schedule:
       schedule_type: arbitrary
@@ -87,7 +87,7 @@ training:
         milestones:
           - 200
         gamma: 0.1
-  model_dest_path: '/path_to_baseline/models/sn7_baseline/xdxd_final.pth'
+  model_dest_path: '/tmp/CosmiQ_SN7_Baseline-master/models/sn7_baseline/xdxd_final.pth'
   verbose: true
 
 inference:

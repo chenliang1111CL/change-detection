@@ -1,11 +1,11 @@
 
-root_dir = '/home/user1/datasets/spacenet7/'
+root_dir = '/home/user1/datasets/spacenet7/wdata'
 
 import pandas as pd
 import os
 
 out_dir = os.path.join(root_dir, 'csvs/')
-pops = ['train', 'test_public']
+pops = ['train', 'test']
 os.makedirs(out_dir, exist_ok=True)
 
 for pop in pops:
@@ -15,32 +15,20 @@ for pop in pops:
     subdirs = sorted([f for f in os.listdir(d) if os.path.isdir(os.path.join(d, f))])
     for subdir in subdirs:
 
-        if pop == 'train':
-            im_files = [os.path.join(d, subdir, 'images_masked', f)
-                        for f in sorted(os.listdir(os.path.join(d, subdir, 'images_masked')))
-                        if f.endswith('.tif') and os.path.exists(
-                    os.path.join(d, subdir, 'masks', f.split('.')[0] + '_Buildings.tif'))]
-            mask_files = [os.path.join(d, subdir, 'masks', f.split('.')[0] + '_Buildings.tif')
-                          for f in sorted(os.listdir(os.path.join(d, subdir, 'images_masked')))
-                          if f.endswith('.tif') and os.path.exists(
-                    os.path.join(d, subdir, 'masks', f.split('.')[0] + '_Buildings.tif'))]
-            im_list.extend(im_files)
-            mask_list.extend(mask_files)
+        masks = os.listdir(os.path.join(d, subdir, 'masks_3x_divide'))
+        for f in masks:
+            if f.endswith('.tif'):
+                b = os.path.join(d, subdir, 'images_masked_3x_divide', f.replace('_Buildings', ''))
+                if os.path.exists(b):
+                    mask_list.append(os.path.join(d, subdir, 'masks_3x_divide', f))
+                    im_list.append(b)
 
-        elif pop == 'test_public':
-            im_files = [os.path.join(d, subdir, 'images_masked', f)
-                        for f in sorted(os.listdir(os.path.join(d, subdir, 'images_masked')))
-                        if f.endswith('.tif')]
-            im_list.extend(im_files)
 
     # save to dataframes
     # print("im_list:", im_list)
     # print("mask_list:", mask_list)
-    if pop == 'train':
-        df = pd.DataFrame({'image': im_list, 'label':mask_list})
-        # display(df.head())
-    elif pop == 'test_public':
-        df = pd.DataFrame({'image': im_list})
+    df = pd.DataFrame({'image': im_list, 'label':mask_list})
+
     df.to_csv(outpath, index=False)
     print(pop, "len df:", len(df))
     print("output csv:", outpath)

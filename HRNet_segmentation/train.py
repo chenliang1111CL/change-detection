@@ -86,7 +86,8 @@ def main(args):
                                                num_workers=num_workers,
                                                shuffle=True,
                                                pin_memory=True,
-                                               collate_fn=train_dataset.collate_fn)
+                                               collate_fn=train_dataset.collate_fn
+                                               )
 
     val_loader = torch.utils.data.DataLoader(val_dataset,
                                              batch_size=1,
@@ -165,7 +166,7 @@ def parse_args():
     import argparse
     parser = argparse.ArgumentParser(description="pytorch unet training")
 
-    parser.add_argument("--data-path", default="/home/user1/datasets", help="DRIVE root")
+    parser.add_argument("--data-path", default="/home/user1/datasets", help="SN")
     # exclude background
     parser.add_argument("--num-classes", default=1, type=int)
     parser.add_argument("--device", default="cuda:1", help="training device")

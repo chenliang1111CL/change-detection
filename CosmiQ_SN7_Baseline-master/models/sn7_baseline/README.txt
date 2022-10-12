@@ -1,4 +1,4 @@
-# split weight file
+ split weight file
 mkdir weight_split
 split -b 80m xdxd_final.pth weight_split/
 # re-combine weight file
