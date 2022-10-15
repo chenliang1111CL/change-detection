@@ -1,15 +1,10 @@
 import os
 import re
-import time
-import random
 import sys
 import multiprocessing
 import warnings
 warnings.filterwarnings('ignore')
-
 import numpy as np
-from PIL import Image
-import cv2
 import skimage.io
 from skimage.draw import polygon
 from skimage import measure
@@ -17,9 +12,6 @@ from skimage.segmentation import watershed
 from skimage.feature import peak_local_max
 from scipy import ndimage as ndi
 from rasterio import features
-
-import solaris as sol
-from shapely.ops import cascaded_union
 from shapely.geometry import shape, Polygon
 
 
@@ -301,7 +293,7 @@ def main():
 
 
 if __name__ == "__main__":
-    src_img_root = sys.argv[1]
-    pred_root = sys.argv[2]
-    out_file = sys.argv[3]
+    src_img_root = '/wdata/test'
+    pred_root = 'vis/test_org_compose'
+    out_file = "$output_path"
     main()
