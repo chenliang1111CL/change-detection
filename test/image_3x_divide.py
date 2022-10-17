@@ -14,7 +14,7 @@ def caijian(image_one,path,image_file):
             rol = img.crop(box)
             rol.save(file)
 
-root = r'D:\spacenet\train'
+root = r'/home/user1/datasets/spacenet7/SN7_buildings_train/train'
 aois = [os.path.join(root, x) for x in os.listdir(root)]
 
 for aoi in aois:
@@ -25,13 +25,14 @@ for aoi in aois:
     images_masked = os.path.join(aoi, "images_masked")
     img_files = [x for x in os.listdir(images_masked)]
     images_masked_3x = os.path.join(aoi, "images_masked_3x")
-    out_path =  os.path.join(aoi, "images_masked_3x_divide")
+    out_path =os.path.join(aoi, "images_masked_3x_divide")
     if not os.path.exists(images_masked_3x):
         os.makedirs(images_masked_3x)
     if not os.path.exists(out_path):
         os.makedirs(out_path)
     type = 'tif'
     for img_file in img_files:
+        print(img_file)
         fppath = os.path.join(images_masked,img_file)
         fp2 = os.path.join(images_masked_3x,img_file)
         img = Image.open(fppath)

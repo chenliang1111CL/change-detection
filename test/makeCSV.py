@@ -1,5 +1,5 @@
 
-root_dir = '/home/user1/datasets/spacenet7/wdata'
+root_dir = '/home/user1/datasets/spacenet7/SN7_buildings_train'
 
 import pandas as pd
 import os

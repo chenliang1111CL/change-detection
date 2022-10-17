@@ -61,10 +61,10 @@ def data_migration_value(filename):
     spatialRef = layer.GetSpatialRef()
     # from feature
     feature = layer.GetNextFeature()
-    if feature==None:
-        pass
+    # if feature==None:
+    #     pass
 
-    geom = feature.GetGeometryRef()
+    # geom = feature.GetGeometryRef()
     # spatialRef = geom.GetSpatialReference()
 
     # coordinate migraion
@@ -113,7 +113,7 @@ def data_migration_value2(x1,x2,filename):
     # from feature
     feature = layer.GetNextFeature()
 
-    geom = feature.GetGeometryRef()
+    # geom = feature.GetGeometryRef()
     # spatialRef = geom.GetSpatialReference()
 
     # coordinate migraion
@@ -215,7 +215,7 @@ def osm_offset_outshp(coor, coornum, spatialRef, fp):
     oDS.Destroy()
     # print("数据集创建完成！\n")
 
-root = r'D:\spacenet\train'
+root = r'/home/user1/datasets/spacenet7/SN7_buildings_train/train'
 aois = [os.path.join(root, x) for x in os.listdir(root)]
 for aoi in aois:
     if not os.path.isdir(os.path.join(root, aoi)):

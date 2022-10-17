@@ -170,7 +170,7 @@ def parse_args():
     # exclude background
     parser.add_argument("--num-classes", default=1, type=int)
     parser.add_argument("--device", default="cuda:1", help="training device")
-    parser.add_argument("-b", "--batch-size", default=2, type=int)
+    parser.add_argument("-b", "--batch-size", default=32, type=int)
     parser.add_argument("--epochs", default=200, type=int, metavar="N",
                         help="number of total epochs to train")
 

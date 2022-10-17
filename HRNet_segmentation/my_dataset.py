@@ -11,12 +11,12 @@ class DriveDataset(Dataset):
         self.transforms = transforms
         if train:
             # self.flag = "training"
-            data = pd.read_csv('/home/user1/datasets/spacenet7/wdata/csvs/sn7_baseline_train_df.csv')
+            data = pd.read_csv('/home/user1/datasets/spacenet7/SN7_buildings_train/csvs/sn7_baseline_train_df.csv')
             self.img_list = data['image'].tolist()
             self.manual = data['label'].tolist()
         else:
             # self.flag = "test"
-            data = pd.read_csv('/home/user1/datasets/spacenet7/wdata/csvs/sn7_baseline_test_df.csv')
+            data = pd.read_csv('/home/user1/datasets/spacenet7/SN7_buildings_train/csvs/sn7_baseline_test_df.csv')
             self.img_list = data['image'].tolist()
             self.manual = data['label'].tolist()
 
