@@ -8,19 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/new.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/new.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRNet_segmentation/my_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/HRNet_segmentation/my_dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRNet_segmentation/results20220109-165837.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRNet_segmentation/results20220920-090500.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRNet_segmentation/results20220920-094311.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRNet_segmentation/results20220920-123211.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRNet_segmentation/results20220920-124013.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRNet_segmentation/results20220920-130409.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRNet_segmentation/results20220920-131945.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRNet_segmentation/results20220920-184301.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRNet_segmentation/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/HRNet_segmentation/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/image_3x_divide.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/image_3x_divide.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/label_3x_divide.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/label_3x_divide.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/makeCSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/makeCSV.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +32,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
-  }
-}</component>
-  <component name="RunManager" selected="Python.train">
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.mean">
     <configuration name="image_3x_divide (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="new" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -63,29 +51,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/image_3x_divide.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="image_3x_divide" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="new" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="F:\change-detection\test\image_3x_divide.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/image_3x_divide.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,7 +95,30 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/makeCSV.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mean" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="new" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/mean.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,6 +139,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HRNet_segmentation/train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -160,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mean" />
         <item itemvalue="Python.train" />
         <item itemvalue="Python.makeCSV" />
         <item itemvalue="Python.label_3x_divide (1)" />
         <item itemvalue="Python.image_3x_divide (1)" />
-        <item itemvalue="Python.image_3x_divide" />
       </list>
     </recent_temporary>
   </component>
@@ -187,6 +178,8 @@
       <workItem from="1665745450931" duration="245000" />
       <workItem from="1665750589594" duration="14702000" />
       <workItem from="1665807346518" duration="4968000" />
+      <workItem from="1666109530390" duration="192000" />
+      <workItem from="1666109746963" duration="850000" />
     </task>
     <servers />
   </component>
@@ -221,5 +214,8 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/change_detection$mean.coverage" NAME="mean 覆盖结果" MODIFIED="1666110426222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
   </component>
 </project>
